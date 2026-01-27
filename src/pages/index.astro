@@ -1,7 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
-// src/pages/index.astro
 ---
 
 <Layout title="Andes Protección | Corredores de Seguros">
@@ -14,7 +12,6 @@ import Layout from "../layouts/Layout.astro";
                 class="w-full h-full object-cover opacity-50"
             />
         </div>
-
         <div class="relative z-10 text-center px-4 max-w-5xl mx-auto text-white mt-16">
             <p class="text-lg md:text-xl font-medium mb-4 tracking-[0.2em] text-blue-300" data-aos="fade-down">
                 CORREDORES DE SEGUROS
@@ -38,47 +35,68 @@ import Layout from "../layouts/Layout.astro";
             <div class="text-center mb-20" data-aos="fade-up">
                 <h2 class="text-4xl font-bold text-slate-900 mb-4">Nuestros Productos</h2>
                 <div class="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
+                <p class="mt-4 text-slate-500">Haz clic en cada servicio para ver más detalles.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-                <div class="group relative h-96 rounded-2xl overflow-hidden shadow-xl cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                <a href="/servicios/empresas" class="group relative h-96 rounded-2xl overflow-hidden shadow-xl cursor-pointer block" data-aos="fade-up" data-aos-delay="100">
                     <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent opacity-90"></div>
                     <div class="absolute bottom-0 left-0 p-8">
                         <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blue-300 transition">Empresas</h3>
-                        <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                            Protección de activos, incendio, sismo y responsabilidad civil.
-                        </p>
+                        <p class="text-gray-300 text-sm">Protección de activos, incendio, sismo y responsabilidad civil. <span class="text-blue-400 font-bold ml-2">Ver más &rarr;</span></p>
                     </div>
-                </div>
+                </a>
 
-                <div class="group relative h-96 rounded-2xl overflow-hidden shadow-xl cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                <a href="/servicios/vida" class="group relative h-96 rounded-2xl overflow-hidden shadow-xl cursor-pointer block" data-aos="fade-up" data-aos-delay="200">
                     <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent opacity-90"></div>
                     <div class="absolute bottom-0 left-0 p-8">
                         <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blue-300 transition">Vida y Salud</h3>
-                        <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                            Seguros complementarios de salud, catastróficos y vida individual.
-                        </p>
+                        <p class="text-gray-300 text-sm">Seguros complementarios, catastróficos y vida individual. <span class="text-blue-400 font-bold ml-2">Ver más &rarr;</span></p>
                     </div>
-                </div>
+                </a>
 
-                <div class="group relative h-96 rounded-2xl overflow-hidden shadow-xl cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                <a href="/servicios/vehiculos" class="group relative h-96 rounded-2xl overflow-hidden shadow-xl cursor-pointer block" data-aos="fade-up" data-aos-delay="300">
                     <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent opacity-90"></div>
                     <div class="absolute bottom-0 left-0 p-8">
                         <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blue-300 transition">Vehículos</h3>
-                        <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                            Cobertura full para autos, camiones y flotas comerciales.
-                        </p>
+                        <p class="text-gray-300 text-sm">Cobertura full para autos, camiones y flotas. <span class="text-blue-400 font-bold ml-2">Ver más &rarr;</span></p>
                     </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <p class="text-blue-600 font-bold tracking-widest uppercase text-sm mb-2">Proceso Simple</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Asegura tu tranquilidad en 3 pasos</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="relative p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">1</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Contáctanos</h3>
+                    <p class="text-slate-600">Envíanos tus datos o llámanos. Sin compromisos ni letras chicas.</p>
+                </div>
+                <div class="relative p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">2</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Asesoría Experta</h3>
+                    <p class="text-slate-600">Evaluamos tu riesgo y cotizamos con las mejores compañías del mercado.</p>
+                </div>
+                <div class="relative p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">3</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Vive Tranquilo</h3>
+                    <p class="text-slate-600">Elige la mejor opción y deja la gestión de siniestros en nuestras manos.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="nosotros" class="py-20 bg-white">
+    <section id="nosotros" class="py-20 bg-slate-50">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
             <div class="w-full md:w-1/2" data-aos="fade-right">
                 <div class="relative">
@@ -93,7 +111,6 @@ import Layout from "../layouts/Layout.astro";
                 <p class="text-slate-600 mb-6 text-lg leading-relaxed">
                     En <strong>Andes Protección</strong>, no solo vendemos seguros; construimos relaciones de confianza a largo plazo. Con más de 20 años en el mercado de Temuco y el sur de Chile, entendemos que detrás de cada póliza hay una familia o un negocio que proteger.
                 </p>
-                
                 <div class="flex gap-6 mt-8">
                     <div class="flex flex-col">
                         <span class="text-4xl font-bold text-blue-600">+20</span>
@@ -107,6 +124,15 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </div>
     </section>
-	
+
+    <section class="py-20 bg-blue-900 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para estar protegido?</h2>
+            <p class="text-blue-200 mb-8 max-w-2xl mx-auto text-lg">Déjanos tus datos y un ejecutivo experto te contactará hoy mismo para ofrecerte la mejor alternativa.</p>
+            <a href="#contacto" class="inline-block bg-white text-blue-900 font-bold py-4 px-12 rounded-full hover:bg-gray-100 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                Solicitar Cotización Gratis
+            </a>
+        </div>
+    </section>
 
 </Layout>
