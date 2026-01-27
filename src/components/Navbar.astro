@@ -1,0 +1,25 @@
+---
+// src/components/Navbar.astro
+---
+<nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-md transition-all">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="text-2xl font-extrabold text-slate-900 tracking-tighter">
+            ANDES<span class="text-blue-600">PROTECCIÓN</span>
+        </a>
+        
+        <div class="hidden md:flex space-x-8 text-sm font-bold text-slate-600 items-center">
+            <a href="/#inicio" class="hover:text-blue-600 transition">INICIO</a>
+            <a href="/#productos" class="hover:text-blue-600 transition">PRODUCTOS</a>
+            <a href="/#nosotros" class="hover:text-blue-600 transition">QUIÉNES SOMOS</a>
+            <a href="/#contacto" class="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-600/20">
+                COTIZAR
+            </a>
+        </div>
+
+        <div class="md:hidden">
+            <button class="text-slate-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </div>
+</nav>
