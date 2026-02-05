@@ -1,65 +1,135 @@
 ---
 // src/components/Navbar.astro
 ---
-<nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-md transition-all">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-        
-        <a href="/" class="text-2xl font-extrabold text-slate-900 tracking-tighter">
-            ANDES<span class="text-blue-600">PROTECCIÓN</span>
+
+<nav
+  class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-md transition-all"
+>
+  <nav
+    class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-md transition-all"
+  >
+    <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+      <a href="/" class="flex items-center gap-4">
+        <img
+          src="/logoGrandeSinFondo.png"
+          alt="Logo Icono"
+          class="h-14 w-auto object-contain"
+        />
+
+        <img
+          src="/textoLogoSinFondo.png"
+          alt="Andes Protección Texto"
+          class="h-13 w-auto object-contain"
+        />
+      </a>
+
+      <div
+        class="hidden md:flex space-x-8 text-sm font-bold text-slate-600 items-center"
+      >
+        <a href="/#inicio" class="hover:text-blue-600 transition">INICIO</a>
+        <a href="/#productos" class="hover:text-blue-600 transition"
+          >PRODUCTOS</a
+        >
+        <a href="/#nosotros" class="hover:text-blue-600 transition"
+          >QUIÉNES SOMOS</a
+        >
+        <a
+          href="/#contacto"
+          class="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-600/20"
+        >
+          COTIZAR
         </a>
-        
-        <div class="hidden md:flex space-x-8 text-sm font-bold text-slate-600 items-center">
-            <a href="/#inicio" class="hover:text-blue-600 transition">INICIO</a>
-            <a href="/#productos" class="hover:text-blue-600 transition">PRODUCTOS</a>
-            <a href="/#nosotros" class="hover:text-blue-600 transition">QUIÉNES SOMOS</a>
-            <a href="/#contacto" class="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-600/20">
-                COTIZAR
-            </a>
-        </div>
+      </div>
 
-        <div class="md:hidden flex items-center">
-            <button id="mobile-menu-btn" class="text-slate-900 focus:outline-none p-2">
-                <svg id="icon-open" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                <svg id="icon-close" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-        </div>
+      <div class="md:hidden flex items-center">
+        <button
+          id="mobile-menu-btn"
+          class="text-slate-900 focus:outline-none p-2"
+        >
+          <svg
+            id="icon-open"
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            ><path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"></path></svg
+          >
+          <svg
+            id="icon-close"
+            class="w-8 h-8 hidden"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            ><path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path></svg
+          >
+        </button>
+      </div>
     </div>
 
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-xl">
-        <div class="flex flex-col px-6 py-4 space-y-4">
-            <a href="/#inicio" class="text-slate-600 font-bold hover:text-blue-600 py-2 border-b border-slate-50 mobile-link">INICIO</a>
-            <a href="/#productos" class="text-slate-600 font-bold hover:text-blue-600 py-2 border-b border-slate-50 mobile-link">PRODUCTOS</a>
-            <a href="/#nosotros" class="text-slate-600 font-bold hover:text-blue-600 py-2 border-b border-slate-50 mobile-link">QUIÉNES SOMOS</a>
-            <a href="/#contacto" class="bg-blue-600 text-white text-center font-bold py-3 rounded-lg hover:bg-blue-700 mobile-link">
-                COTIZAR AHORA
-            </a>
-        </div>
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-xl"
+    >
+      <div class="flex flex-col px-6 py-4 space-y-4">
+        <a
+          href="/#inicio"
+          class="text-slate-600 font-bold hover:text-blue-600 py-2 border-b border-slate-50 mobile-link"
+          >INICIO</a
+        >
+        <a
+          href="/#productos"
+          class="text-slate-600 font-bold hover:text-blue-600 py-2 border-b border-slate-50 mobile-link"
+          >PRODUCTOS</a
+        >
+        <a
+          href="/#nosotros"
+          class="text-slate-600 font-bold hover:text-blue-600 py-2 border-b border-slate-50 mobile-link"
+          >QUIÉNES SOMOS</a
+        >
+        <a
+          href="/#contacto"
+          class="bg-blue-600 text-white text-center font-bold py-3 rounded-lg hover:bg-blue-700 mobile-link"
+        >
+          COTIZAR AHORA
+        </a>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<script is:inline>
+  <script is:inline>
     // Esperar a que cargue la página
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        const iconOpen = document.getElementById('icon-open');
-        const iconClose = document.getElementById('icon-close');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
+    document.addEventListener("DOMContentLoaded", () => {
+      const btn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      const iconOpen = document.getElementById("icon-open");
+      const iconClose = document.getElementById("icon-close");
+      const mobileLinks = document.querySelectorAll(".mobile-link");
 
-        // Función para abrir/cerrar
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-            iconOpen.classList.toggle('hidden');
-            iconClose.classList.toggle('hidden');
-        });
+      // Función para abrir/cerrar
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        iconOpen.classList.toggle("hidden");
+        iconClose.classList.toggle("hidden");
+      });
 
-        // Cerrar el menú automáticamente al hacer clic en un enlace
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.add('hidden'); // Ocultar menú
-                iconOpen.classList.remove('hidden'); // Mostrar hamburguesa
-                iconClose.classList.add('hidden'); // Ocultar X
-            });
+      // Cerrar el menú automáticamente al hacer clic en un enlace
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.add("hidden"); // Ocultar menú
+          iconOpen.classList.remove("hidden"); // Mostrar hamburguesa
+          iconClose.classList.add("hidden"); // Ocultar X
         });
+      });
     });
-</script>
+  </script>
+</nav>
+-->
+

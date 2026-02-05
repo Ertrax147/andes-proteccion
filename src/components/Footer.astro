@@ -4,60 +4,112 @@ const year = new Date().getFullYear();
 ---
 
 <footer class="bg-slate-900 text-white pt-16 pb-8">
-    <div class="container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-            
-            <div class="col-span-1 md:col-span-1">
-                <a href="/" class="text-2xl font-extrabold tracking-tighter block mb-6">
-                    ANDES<span class="text-blue-500">PROTECCIÓN</span>
-                </a>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Corredora de seguros dedicada a brindar tranquilidad y respaldo a familias y empresas en todo Chile.
-                </p>
-            </div>
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div class="col-span-1 md:col-span-1">
+        <a
+          href="/"
+          class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 p-4 rounded-xl mb-6 hover:bg-white/20 transition-all"
+        >
+          <img
+            src="/logoBase.png"
+            alt="Logo Icono"
+            class="h-10 w-auto object-contain"
+          />
 
-            <div id="contacto">
-                <h4 class="text-lg font-bold mb-6 border-b border-blue-500 w-fit pb-2">Contáctanos</h4>
-                <ul class="space-y-4 text-gray-400 text-sm">
-                    <li class="flex items-start gap-3">
-                        <span class="text-blue-500 mt-1">📍</span>
-                        <span>Av. Alemania 0123, Of. 404<br>Temuco, Chile</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="text-blue-500">📞</span>
-                        <a href="tel:+56912345678" class="hover:text-white transition">+56 9 1234 5678</a>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="text-blue-500">✉️</span>
-                        <a href="mailto:contacto@andesproteccion.cl" class="hover:text-white transition">contacto@andesproteccion.cl</a>
-                    </li>
-                </ul>
-            </div>
+          <img
+            src="/textoLogoSinFondo.png"
+            alt="Andes Protección Texto"
+            class="h-10 w-auto object-contain brightness-0 invert"
+          />
+        </a>
 
-            <div>
-                <h4 class="text-lg font-bold mb-6 border-b border-blue-500 w-fit pb-2">Seguros</h4>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li><a href="/servicios/vehiculos" class="hover:text-blue-400 transition">Vehículos y Flotas</a></li>
-                    <li><a href="/servicios/vida" class="hover:text-blue-400 transition">Vida y Salud</a></li>
-                    <li><a href="/servicios/empresas" class="hover:text-blue-400 transition">Empresas y Pymes</a></li>
-                </ul>
-            </div>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Corredora de seguros dedicada a brindar tranquilidad y respaldo a
+          familias y empresas en todo Chile.
+        </p>
+      </div>
 
-            <div>
-                <h4 class="text-lg font-bold mb-6 border-b border-blue-500 w-fit pb-2">Navegación</h4>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li><a href="/#inicio" class="hover:text-blue-400 transition">Inicio</a></li>
-                    <li><a href="/#nosotros" class="hover:text-blue-400 transition">Quiénes Somos</a></li>
-                    <li><a href="/#productos" class="hover:text-blue-400 transition">Productos</a></li>
-                    <li><a href="#contacto" class="hover:text-blue-400 transition">Contacto</a></li>
-                </ul>
-            </div>
+      <div id="contacto">
+        <h4 class="text-lg font-bold mb-6 border-b border-blue-500 w-fit pb-2">
+          Contáctanos
+        </h4>
+        <ul class="space-y-4 text-gray-400 text-sm">
+          <li class="flex items-start gap-3">
+            <span class="text-blue-500 mt-1">📍</span>
+            <span>Av. Alemania 0123, Of. 404<br />Temuco, Chile</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-blue-500">📞</span>
+            <a href="tel:+56912345678" class="hover:text-white transition"
+              >+56 9 1234 5678</a
+            >
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-blue-500">✉️</span>
+            <a
+              href="mailto:contacto@andesproteccion.cl"
+              class="hover:text-white transition">contacto@andesproteccion.cl</a
+            >
+          </li>
+        </ul>
+      </div>
 
-            
-        </div>
+      <div>
+        <h4 class="text-lg font-bold mb-6 border-b border-blue-500 w-fit pb-2">
+          Seguros
+        </h4>
+        <ul class="space-y-3 text-gray-400 text-sm">
+          <li>
+            <a
+              href="/servicios/vehiculos"
+              class="hover:text-blue-400 transition">Vehículos y Flotas</a
+            >
+          </li>
+          <li>
+            <a href="/servicios/vida" class="hover:text-blue-400 transition"
+              >Vida y Salud</a
+            >
+          </li>
+          <li>
+            <a href="/servicios/empresas" class="hover:text-blue-400 transition"
+              >Empresas y Pymes</a
+            >
+          </li>
+        </ul>
+      </div>
 
-        <div class="border-t border-slate-800 pt-8 mt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs">
-            <p>&copy; {year} Andes Protección SpA. Todos los derechos reservados.</p>
-        </div>
+      <div>
+        <h4 class="text-lg font-bold mb-6 border-b border-blue-500 w-fit pb-2">
+          Navegación
+        </h4>
+        <ul class="space-y-3 text-gray-400 text-sm">
+          <li>
+            <a href="/#inicio" class="hover:text-blue-400 transition">Inicio</a>
+          </li>
+          <li>
+            <a href="/#nosotros" class="hover:text-blue-400 transition"
+              >Quiénes Somos</a
+            >
+          </li>
+          <li>
+            <a href="/#productos" class="hover:text-blue-400 transition"
+              >Productos</a
+            >
+          </li>
+          <li>
+            <a href="#contacto" class="hover:text-blue-400 transition"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
+
+    <div
+      class="border-t border-slate-800 pt-8 mt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs"
+    >
+      <p>&copy; {year} Andes Protección SpA. Todos los derechos reservados.</p>
+    </div>
+  </div>
 </footer>
