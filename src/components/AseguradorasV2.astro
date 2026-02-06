@@ -1,0 +1,66 @@
+---
+const compañias = [
+  { name: "HDI Seguros", logo: "/aseguradoras/hdi.png" },
+  { name: "Sura", logo: "/aseguradoras/sura.svg" },
+  { name: "Reale Seguros", logo: "/aseguradoras/reale.png" },
+  { name: "Mapfre", logo: "/aseguradoras/mapfre.svg" },
+  { name: "BCI Seguros", logo: "/aseguradoras/bci-seguros.svg" },
+  { name: "Consorcio", logo: "/aseguradoras/consorcio.svg" },
+  { name: "Chubb", logo: "/aseguradoras/chubb.png" },
+  { name: "BICEVIDA", logo: "/aseguradoras/bice-vida.svg" },
+  { name: "AuguStar Seguros", logo: "/aseguradoras/augustar.png" },
+  { name: "FID Seguros", logo: "/aseguradoras/fid.svg" },
+  { name: "Renta Nacional", logo: "/aseguradoras/renta-nacional.svg" },
+  { name: "Southbridge", logo: "/aseguradoras/southbridge.png" },
+  { name: "Zurich", logo: "/aseguradoras/zurich.svg" },
+];
+
+const scrollingLogos = [...compañias, ...compañias];
+---
+
+<section class="py-12 bg-white border-y border-slate-50 overflow-hidden">
+  <div class="container mx-auto px-6 mb-8">
+    <p class="text-center text-slate-400 font-semibold uppercase tracking-widest text-xs" data-aos="fade-up">
+      Respaldados por las mejores compañías del mercado
+    </p>
+  </div>
+
+  <div class="relative flex overflow-hidden">
+    <div class="flex animate-marquee whitespace-nowrap items-center py-2">
+      {
+        scrollingLogos.map((cia) => (
+          /* REDUCCIÓN DE ESPACIO:
+             - Cambiamos mx-8/12 por mx-4 md:mx-6 para acercar los logos.
+          */
+          <div class="flex items-center justify-center mx-4 md:mx-6 flex-shrink-0">
+            <img
+              src={cia.logo}
+              alt={cia.name}
+              title={cia.name}
+
+              class="h-8 md:h-12 w-auto max-w-[140px] md:max-w-[180px] object-contain hover:scale-110 transition duration-300 cursor-help"
+            />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    /* Velocidad ajustada: 40s para que no sea lento pero tampoco estresante */
+    animation: marquee 40s linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+</style>

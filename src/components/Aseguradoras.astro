@@ -1,35 +1,37 @@
 ---
 const compañias = [
-  { name: 'HDI Seguros', logo: 'aseguradoras/hdi.png' },
-  { name: 'Sura', logo: 'aseguradoras/sura.svg' },
-  { name: 'Reale Seguros', logo: 'aseguradoras/reale.png' },
-  { name: 'Mapfre', logo: 'aseguradoras/mapfre.svg' },
-  { name: 'BCI Seguros', logo: 'aseguradoras/bci-seguros.svg' },
-  { name: 'Consorcio', logo: 'aseguradoras/consorcio.svg' },
-  { name: 'Chubb', logo: 'aseguradoras/chubb.png' },
-  { name: 'BICEVIDA', logo: 'aseguradoras/bice-vida.svg' },
-  { name: 'AuguStar Seguros', logo: 'aseguradoras/augustar.png' },
-  { name: 'FID Seguros', logo: 'aseguradoras/fid.svg' },
-  { name: 'Renta Nacional', logo: 'aseguradoras/renta-nacional.svg' },
-  { name: 'Southbridge', logo: 'aseguradoras/southbridge.png' },
-  { name: 'Zurich', logo: 'aseguradoras/zurich.svg' },
+  { name: 'HDI Seguros', logo: '/aseguradoras/hdi.png' },
+  { name: 'Sura', logo: '/aseguradoras/sura.svg' },
+  { name: 'Reale Seguros', logo: '/aseguradoras/reale.png' },
+  { name: 'Mapfre', logo: '/aseguradoras/mapfre.svg' },
+  { name: 'BCI Seguros', logo: '/aseguradoras/bci-seguros.svg' },
+  { name: 'Consorcio', logo: '/aseguradoras/consorcio.svg' },
+  { name: 'Chubb', logo: '/aseguradoras/chubb.png' },
+  { name: 'BICEVIDA', logo: '/aseguradoras/bice-vida.svg' },
+  { name: 'AuguStar Seguros', logo: '/aseguradoras/augustar.png' },
+  { name: 'FID Seguros', logo: '/aseguradoras/fid.svg' },
+  { name: 'Renta Nacional', logo: '/aseguradoras/renta-nacional.svg' },
+  { name: 'Southbridge', logo: '/aseguradoras/southbridge.png' },
+  { name: 'Zurich', logo: '/aseguradoras/zurich.svg' },
 ];
 ---
 
 <section class="py-16 bg-white border-y border-slate-50">
     <div class="container mx-auto px-6">
-        <p class="text-center text-slate-400 font-semibold uppercase tracking-widest text-xs mb-10" data-aos="fade-up">
+        <p class="text-center text-slate-400 font-semibold uppercase tracking-widest text-xs mb-12" data-aos="fade-up">
             Respaldados por las mejores compañías del mercado
         </p>
         
-        <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex flex-wrap justify-center items-center gap-4 md:gap-8 transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
             {compañias.map((cia) => (
-                <img 
-                    src={cia.logo} 
-                    alt={cia.name} 
-                    title={cia.name}
-                    class="h-10 md:h-14 object-contain hover:scale-110 transition duration-300 cursor-help" 
-                />
+                <div class="flex items-center justify-center w-32 md:w-48 h-20 px-4">
+                    <img 
+                        src={cia.logo} 
+                        alt={cia.name} 
+                        title={cia.name}
+                        class="max-h-10 md:max-h-12 max-w-full object-contain hover:scale-110 transition duration-300 cursor-help" 
+                    />
+                </div>
             ))}
         </div>
     </div>
