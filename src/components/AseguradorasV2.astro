@@ -29,9 +29,6 @@ const scrollingLogos = [...compañias, ...compañias];
     <div class="flex animate-marquee whitespace-nowrap items-center py-2">
       {
         scrollingLogos.map((cia) => (
-          /* REDUCCIÓN DE ESPACIO:
-             - Cambiamos mx-8/12 por mx-4 md:mx-6 para acercar los logos.
-          */
           <div class="flex items-center justify-center mx-4 md:mx-6 flex-shrink-0">
             <img
               src={cia.logo}
