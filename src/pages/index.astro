@@ -69,7 +69,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </header>
 
-  <section class="py-24 bg-white">
+  <section class="py-20 bg-white">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16" data-aos="fade-up">
         <p
@@ -78,71 +78,58 @@ import Layout from "../layouts/Layout.astro";
           Proceso Simple
         </p>
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
-          Tu tranquilidad en 3 pasos
+          Asegura tu tranquilidad en 3 pasos
         </h2>
-        <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
         <div
-          class="p-8 rounded-2xl bg-slate-50 hover:shadow-xl transition-all border border-slate-100"
+          class="relative p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow"
           data-aos="fade-up"
+          data-aos-delay="100"
         >
           <div
-            class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-6 shadow-lg shadow-blue-200"
+            class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6"
           >
             1
           </div>
-          <h3
-            class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wider"
-          >
-            Contáctanos
-          </h3>
-          <p class="text-slate-600 leading-relaxed">
-            Envíanos tus requerimientos por WhatsApp o correo. Respuesta
-            inmediata y sin compromisos.
+          <h3 class="text-xl font-bold text-slate-900 mb-4">Contáctanos</h3>
+          <p class="text-slate-600">
+            Envíanos tus datos o llámanos. Sin compromisos ni letras chicas.
           </p>
         </div>
-
         <div
-          class="p-8 rounded-2xl bg-slate-50 hover:shadow-xl transition-all border border-slate-100"
+          class="relative p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow"
           data-aos="fade-up"
           data-aos-delay="200"
         >
           <div
-            class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-6 shadow-lg shadow-blue-200"
+            class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6"
           >
             2
           </div>
-          <h3
-            class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wider"
-          >
+          <h3 class="text-xl font-bold text-slate-900 mb-4">
             Asesoría Experta
           </h3>
-          <p class="text-slate-600 leading-relaxed">
-            Analizamos tu riesgo y negociamos con las mejores compañías para
-            obtener el precio justo.
+          <p class="text-slate-600">
+            Evaluamos tu riesgo y cotizamos con las mejores compañías del
+            mercado.
           </p>
         </div>
-
         <div
-          class="p-8 rounded-2xl bg-slate-50 hover:shadow-xl transition-all border border-slate-100"
+          class="relative p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow"
           data-aos="fade-up"
-          data-aos-delay="400"
+          data-aos-delay="300"
         >
           <div
-            class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-6 shadow-lg shadow-blue-200"
+            class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6"
           >
             3
           </div>
-          <h3
-            class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wider"
-          >
-            Vive Seguro
-          </h3>
-          <p class="text-slate-600 leading-relaxed">
-            Emite tu póliza y cuenta con nuestro respaldo 24/7 ante cualquier
-            siniestro o duda.
+          <h3 class="text-xl font-bold text-slate-900 mb-4">Vive Tranquilo</h3>
+          <p class="text-slate-600">
+            Elige la mejor opción y deja la gestión de siniestros en nuestras
+            manos.
           </p>
         </div>
       </div>
@@ -280,28 +267,65 @@ import Layout from "../layouts/Layout.astro";
           diferentes áreas. Nuestra dedicación nos da la confianza y seguridad
           de trabajar en forma integral en la protección de nuestros clientes.
         </p>
-        <p
-          class="text-slate-600 mb-6 text-lg leading-relaxed font-bold border-l-4 border-blue-600 pl-4 bg-slate-50 py-2"
-        >
-          Como miembros activos de la Asociación Nacional de Corredores de
-          Seguros (ANS), garantizamos una metodología profesional para asegurar
-          una asesoría eficiente.
+        <p class="text-slate-600 mb-6 text-lg leading-relaxed">
+          Ponemos a disposición nuestra metodología y dedicación para garantizar
+          una asesoría correcta y eficiente. Desarrollamos conexiones sólidas
+          con las compañías de seguros más importantes del país; nuestra vasta
+          experiencia nos permite entregar a nuestros clientes la alternativa
+          más conveniente, mediante un servicio personalizado.
         </p>
 
-        <div class="flex gap-12 mt-8">
-          <div class="flex flex-col">
-            <span class="text-4xl font-black text-blue-600">+22</span>
-            <span
-              class="text-xs font-bold text-slate-500 uppercase tracking-tighter"
-              >Años de Exp.</span
-            >
+        <div class="flex flex-col sm:flex-row gap-8 sm:gap-12 mt-10">
+          <div class="flex items-center gap-4">
+            <div class="p-3 bg-blue-50 rounded-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8 text-blue-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.745 3.745 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-4xl font-black text-blue-900">+22</span>
+              <span
+                class="text-xs font-bold text-slate-500 uppercase tracking-tighter"
+                >Años de Exp.</span
+              >
+            </div>
           </div>
-          <div class="flex flex-col">
-            <span class="text-4xl font-black text-blue-600">+500</span>
-            <span
-              class="text-xs font-bold text-slate-500 uppercase tracking-tighter"
-              >Clientes Felices</span
-            >
+
+          <div class="flex items-center gap-4">
+            <div class="p-3 bg-blue-50 rounded-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8 text-blue-600"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-4xl font-black text-blue-900">+500</span>
+              <span
+                class="text-xs font-bold text-slate-500 uppercase tracking-tighter"
+                >Clientes Felices</span
+              >
+            </div>
           </div>
         </div>
       </div>
