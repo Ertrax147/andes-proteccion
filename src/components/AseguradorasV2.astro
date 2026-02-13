@@ -1,4 +1,5 @@
 ---
+// src/components/AseguradorasV2.astro
 const compañias = [
   { name: "HDI Seguros", logo: "/aseguradoras/hdi.png" },
   { name: "Sura", logo: "/aseguradoras/sura.svg" },
@@ -18,11 +19,80 @@ const compañias = [
 const scrollingLogos = [...compañias, ...compañias];
 ---
 
-<section class="py-12 bg-white border-y border-slate-50 overflow-hidden">
+<section class="py-16 bg-white border-y border-slate-50 overflow-hidden">
   <div class="container mx-auto px-6 mb-8">
-    <p class="text-center text-slate-400 font-semibold uppercase tracking-widest text-xs" data-aos="fade-up">
-      Respaldados por las mejores compañías del mercado
-    </p>
+    <div class="flex flex-col items-center">
+      <div class="mb-16 w-full max-w-5xl" data-aos="fade-up">
+        <p
+          class="text-center text-blue-600 font-bold tracking-[0.3em] uppercase text-xs mb-10"
+        >
+          Acreditación Gremial y Normativa
+        </p>
+
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-24"
+        >
+          <div class="flex flex-col items-center gap-6">
+            <div
+              class="h-28 w-56 flex items-center justify-center p-4 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm transition-all hover:shadow-lg hover:bg-white"
+            >
+              <img
+                src="/aseguradoras/ans.png"
+                alt="Miembro ANS"
+                class="h-full w-auto object-contain"
+              />
+            </div>
+            <div class="text-center">
+              <p
+                class="text-slate-900 font-bold text-lg uppercase tracking-wider"
+              >
+                Miembro Activo ANS
+              </p>
+              <p
+                class="text-slate-500 text-[11px] font-semibold uppercase tracking-widest mt-1"
+              >
+                Asoc. Nacional de Corredores
+              </p>
+            </div>
+          </div>
+
+          <div class="hidden md:block w-px h-20 bg-slate-200"></div>
+
+          <div class="flex flex-col items-center gap-6">
+            <div
+              class="h-28 w-56 flex items-center justify-center p-4 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm transition-all hover:shadow-lg hover:bg-white"
+            >
+              <img
+                src="/aseguradoras/cmf9.png"
+                alt="Registro CMF"
+                class="h-full w-auto object-contain"
+              />
+            </div>
+            <div class="text-center">
+              <p
+                class="text-slate-900 font-bold text-lg uppercase tracking-wider"
+              >
+                Regulados por
+              </p>
+              <p
+                class="text-slate-500 text-[11px] font-semibold uppercase tracking-widest mt-1"
+              >
+                Comisión para el Mercado Financiero
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full text-center" data-aos="fade-up">
+        <div class="w-16 h-px bg-slate-200 mx-auto mb-8"></div>
+        <p
+          class="text-slate-400 font-bold uppercase tracking-[0.2em] text-xs mb-2"
+        >
+          Alianzas con las mejores compañías
+        </p>
+      </div>
+    </div>
   </div>
 
   <div class="relative flex overflow-hidden">
@@ -34,7 +104,6 @@ const scrollingLogos = [...compañias, ...compañias];
               src={cia.logo}
               alt={cia.name}
               title={cia.name}
-
               class="h-8 md:h-12 w-auto max-w-[140px] md:max-w-[180px] object-contain hover:scale-110 transition duration-300 cursor-help"
             />
           </div>
@@ -46,14 +115,17 @@ const scrollingLogos = [...compañias, ...compañias];
 
 <style>
   @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 
   .animate-marquee {
     display: flex;
     width: max-content;
-    /* Velocidad ajustada: 40s para que no sea lento pero tampoco estresante */
     animation: marquee 40s linear infinite;
   }
 
