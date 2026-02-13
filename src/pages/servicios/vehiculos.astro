@@ -3,63 +3,170 @@ import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Seguro Automotriz | Andes Protección">
-    
-    <header class="relative h-[50vh] flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 z-0 bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover opacity-40" alt="Auto en carretera" />
-        </div>
-        <div class="relative z-10 text-center text-white px-8" data-aos="fade-up">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">Seguro Automotriz</h1>
-            <p class="text-xl max-w-xl mx-auto">Protección total para tu ruta y asistencia 24/7.</p>
-        </div>
-    </header>
+  <header
+    class="relative h-[50vh] flex items-center justify-center overflow-hidden"
+  >
+    <div class="absolute inset-0 z-0 bg-slate-900">
+      <img
+        src="/foto-accidente.jpg"
+        class="w-full h-full object-cover opacity-40"
+        alt="Auto en carretera"
+      />
+    </div>
+    <div class="relative z-10 text-center text-white px-8" data-aos="fade-up">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Seguro Automotriz</h1>
+      <div class="flex justify-center">
+        <p
+          id="multi-typing-car"
+          class="text-xl max-w-2xl mx-auto font-medium border-r-4 border-blue-500 pr-2 min-h-[4em] md:min-h-[3em]"
+        >
+        </p>
+      </div>
+    </div>
+  </header>
 
-    <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-8 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            
-            <div data-aos="fade-right">
-                <h2 class="text-3xl font-bold text-slate-900 mb-6 leading-tight">Maneja sin preocupaciones</h2>
-                <p class="text-slate-600 mb-6 text-lg leading-relaxed">
-                    Tu vehículo es fundamental para tu día a día. Te ofrecemos una cobertura integral con las mejores compañías del mercado, garantizando rapidez en la asistencia y en la gestión de siniestros.
-                </p>
-                
-                <h3 class="text-xl font-bold text-slate-900 mb-4">Coberturas Principales:</h3>
-                <ul class="space-y-4 mb-10 text-slate-700 font-medium">
-                    <li class="flex items-center gap-4">
-                        <span class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-                        </span>
-                        Pérdida total y parcial por daños
-                    </li>
-                    <li class="flex items-center gap-4">
-                        <span class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-                        </span>
-                        Robo, hurto y uso no autorizado
-                    </li>
-                    <li class="flex items-center gap-4">
-                        <span class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-                        </span>
-                        Responsabilidad Civil (Daños a terceros)
-                    </li>
-                    <li class="flex items-center gap-4">
-                        <span class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-                        </span>
-                        Asistencia en ruta, grúa y auto de reemplazo
-                    </li>
-                </ul>
+  <section class="py-24 bg-white">
+    <div
+      class="max-w-7xl mx-auto px-8 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
+    >
+      <div data-aos="fade-right">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6 leading-tight">
+          Maneja sin preocupaciones
+        </h2>
+        <p class="text-slate-600 mb-6 text-lg leading-relaxed">
+          Tu vehículo es fundamental para tu día a día. Te ofrecemos una
+          cobertura integral con las mejores compañías del mercado, garantizando
+          rapidez en la asistencia y en la gestión de siniestros.
+        </p>
 
-                <a href="https://wa.me/56912345678?text=Hola,%20me%20interesa%20cotizar%20un%20Seguro%20Automotriz" target="_blank" class="inline-block bg-blue-600 text-white font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 hover:bg-blue-700 text-lg">
-                    Cotizar mi Vehículo
-                </a>
-            </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-4">
+          Coberturas Principales:
+        </h3>
+        <ul class="space-y-4 mb-10 text-slate-700 font-medium">
+          <li class="flex items-center gap-4">
+            <span
+              class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                ><path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </span>
+            Pérdida total y parcial por daños
+          </li>
+          <li class="flex items-center gap-4">
+            <span
+              class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                ><path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </span>
+            Robo, hurto y uso no autorizado
+          </li>
+          <li class="flex items-center gap-4">
+            <span
+              class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                ><path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </span>
+            Responsabilidad Civil (Daños a terceros)
+          </li>
+          <li class="flex items-center gap-4">
+            <span
+              class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                ><path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </span>
+            Asistencia en ruta, grúa y auto de reemplazo
+          </li>
+        </ul>
 
-            <div data-aos="fade-left">
-                <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1000&auto=format&fit=crop" class="rounded-2xl shadow-2xl w-full object-cover" alt="Conduciendo seguro">
-            </div>
+        <a
+          href="https://wa.me/56912345678?text=Hola,%20me%20interesa%20cotizar%20un%20Seguro%20Automotriz"
+          target="_blank"
+          class="inline-block bg-blue-600 text-white font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 hover:bg-blue-700 text-lg"
+        >
+          Cotizar mi Vehículo
+        </a>
+      </div>
 
-        </div>
-    </section>
+      <div data-aos="fade-left">
+        <img
+          src="/auto-chocado.jfif"
+          class="rounded-2xl shadow-2xl w-full object-cover"
+          alt="Vehículo asegurado"
+        />
+      </div>
+    </div>
+  </section>
 </Layout>
+
+<style>
+  #multi-typing-car {
+    border-right: 4px solid #3b82f6;
+    animation: blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #3b82f6;
+    }
+  }
+</style>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const text =
+      "Un segundo puede destruir tu ahorro de años. No te arriesgues a pagar una indemnización millonaria por un error en la ruta.";
+    const target = document.getElementById("multi-typing-car");
+    let i = 0;
+
+    function typeWriter() {
+      if (i < text.length) {
+        target.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 35); // Velocidad ligeramente más rápida por la longitud del texto
+      } else {
+        target.style.borderRight = "none";
+      }
+    }
+
+    typeWriter();
+  });
+</script>

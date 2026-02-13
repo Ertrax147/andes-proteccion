@@ -3,64 +3,170 @@ import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Seguros de Vida y Salud | Andes Protección">
-    
-    <header class="relative h-[50vh] flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 z-0 bg-blue-900">
-            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover opacity-40" alt="Familia feliz caminando" />
-        </div>
-        <div class="relative z-10 text-center text-white px-8" data-aos="fade-up">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">Vida y Salud</h1>
-            <p class="text-xl max-w-xl mx-auto">La tranquilidad de saber que los tuyos están protegidos, pase lo que pase.</p>
-        </div>
-    </header>
+  <header
+    class="relative h-[50vh] flex items-center justify-center overflow-hidden"
+  >
+    <div class="absolute inset-0 z-0 bg-blue-900">
+      <img
+        src="/urgencia-medica.webp"
+        class="w-full h-full object-cover opacity-40"
+        alt="Emergencia médica"
+      />
+    </div>
+    <div class="relative z-10 text-center text-white px-8" data-aos="fade-up">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Vida y Salud</h1>
+      <div class="flex justify-center">
+        <p
+          id="multi-typing-life"
+          class="text-xl max-w-xl mx-auto font-medium border-r-4 border-blue-400 pr-2 min-h-[3em]"
+        >
+        </p>
+      </div>
+    </div>
+  </header>
 
-    <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-8 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            
-            <div class="order-2 md:order-1" data-aos="fade-right">
-                <img src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl w-full object-cover" alt="Protección y cuidado" />
-            </div>
+  <section class="py-24 bg-white">
+    <div
+      class="max-w-7xl mx-auto px-8 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
+    >
+      <div class="order-2 md:order-1" data-aos="fade-right">
+        <img
+          src="/familia.webp"
+          class="rounded-2xl shadow-2xl w-full object-cover"
+          alt="Protección y cuidado"
+        />
+      </div>
 
-            <div class="order-1 md:order-2" data-aos="fade-left">
-                <h2 class="text-3xl font-bold text-slate-900 mb-6 leading-tight">Tu bienestar y el de tu familia es prioridad</h2>
-                <p class="text-slate-600 mb-6 text-lg leading-relaxed">
-                    Ante imprevistos de salud o accidentes, contar con el respaldo adecuado marca la diferencia. Te asesoramos para elegir el seguro que realmente te cubra cuando más lo necesitas.
-                </p>
-                
-                <h3 class="text-xl font-bold text-slate-900 mb-4">Nuestras Soluciones:</h3>
-                <ul class="space-y-4 mb-10 text-slate-700 font-medium">
-                    <li class="flex items-center gap-4">
-                        <span class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-                        </span>
-                        Seguros Complementarios de Salud (Individuay y Colectivo)
-                    </li>
-                    <li class="flex items-center gap-4">
-                        <span class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-                        </span>
-                        Seguros Catastróficos (Oncológico)
-                    </li>
-                    <li class="flex items-center gap-4">
-                        <span class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-                        </span>
-                        Seguros de Vida con Ahorro (APV)
-                    </li>
-                    <li class="flex items-center gap-4">
-                        <span class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-                        </span>
-                        Protección Escolar y Universitaria
-                    </li>
-                </ul>
+      <div class="order-1 md:order-2" data-aos="fade-left">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6 leading-tight">
+          Tu bienestar y el de tu familia es prioridad
+        </h2>
+        <p class="text-slate-600 mb-6 text-lg leading-relaxed">
+          Ante imprevistos de salud o accidentes, contar con el respaldo
+          adecuado marca la diferencia. Te asesoramos para elegir el seguro que
+          realmente te cubra cuando más lo necesitas.
+        </p>
 
-                <a href="https://wa.me/56912345678?text=Hola,%20estoy%20buscando%20información%20sobre%20Seguros%20de%20Vida%20y%20Salud" target="_blank" class="inline-block bg-blue-600 text-white font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 hover:bg-blue-700 text-lg">
-                    Cotizar Seguro de Vida
-                </a>
-            </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-4">
+          Nuestras Soluciones:
+        </h3>
+        <ul class="space-y-4 mb-10 text-slate-700 font-medium">
+          <li class="flex items-center gap-4">
+            <span
+              class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                ><path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </span>
+            Seguros Complementarios de Salud (Individual y Colectivo)
+          </li>
+          <li class="flex items-center gap-4">
+            <span
+              class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                ><path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </span>
+            Seguros Catastróficos (Oncológico)
+          </li>
+          <li class="flex items-center gap-4">
+            <span
+              class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                ><path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </span>
+            Seguros de Vida con Ahorro (APV)
+          </li>
+          <li class="flex items-center gap-4">
+            <span
+              class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shrink-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                ><path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </span>
+            Protección Escolar y Universitaria
+          </li>
+        </ul>
 
-        </div>
-    </section>
-
+        <a
+          href="https://wa.me/56912345678?text=Hola,%20estoy%20buscando%20información%20sobre%20Seguros%20de%20Vida%20y%20Salud"
+          target="_blank"
+          class="inline-block bg-blue-600 text-white font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 hover:bg-blue-700 text-lg"
+        >
+          Cotizar Seguro de Vida
+        </a>
+      </div>
+    </div>
+  </section>
 </Layout>
+
+<style>
+  #multi-typing-life {
+    border-right: 4px solid #60a5fa; /* Color blue-400 */
+    animation: blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #60a5fa;
+    }
+  }
+</style>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const text =
+      "Tu familia depende de ti hoy. Mañana, podrían depender de la decisión que tomes ahora. No dejes su futuro al azar.";
+    const target = document.getElementById("multi-typing-life");
+    let i = 0;
+
+    function typeWriter() {
+      if (i < text.length) {
+        target.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 40);
+      } else {
+        target.style.borderRight = "none";
+      }
+    }
+
+    typeWriter();
+  });
+</script>
