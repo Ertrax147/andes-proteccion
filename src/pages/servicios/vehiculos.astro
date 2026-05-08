@@ -1,5 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import bgVehiculos from "../../assets/foto-accidente.jpg";
+import imgVehiculo from "../../assets/auto-chocado.jpg";
 ---
 
 <Layout title="Seguro Automotriz | Andes Protección">
@@ -7,8 +10,8 @@ import Layout from "../../layouts/Layout.astro";
     class="relative h-[50vh] flex items-center justify-center overflow-hidden"
   >
     <div class="absolute inset-0 z-0 bg-slate-900">
-      <img
-        src="/foto-accidente.jpg"
+      <Image
+        src={bgVehiculos}
         class="w-full h-full object-cover opacity-40"
         alt="Auto en carretera"
       />
@@ -123,8 +126,8 @@ import Layout from "../../layouts/Layout.astro";
       </div>
 
       <div data-aos="fade-left">
-        <img
-          src="/auto-chocado.jfif"
+        <Image
+          src={imgVehiculo}
           class="rounded-2xl shadow-2xl w-full object-cover"
           alt="Vehículo asegurado"
         />
@@ -150,18 +153,22 @@ import Layout from "../../layouts/Layout.astro";
   }
 </style>
 
-<script is:inline>
-  document.addEventListener("DOMContentLoaded", () => {
-    const text =
-      "Un segundo puede destruir tu ahorro de años. No te arriesgues a pagar una indemnización millonaria por un error en la ruta.";
+<script>
+  document.addEventListener("astro:page-load", () => {
     const target = document.getElementById("multi-typing-car");
+    if (!target) return;
+
+    const text = "Un segundo puede destruir tu ahorro de años. No te arriesgues a pagar una indemnización millonaria por un error en la ruta.";
+    target.textContent = "";
+    target.style.borderRight = "4px solid #3b82f6";
     let i = 0;
 
     function typeWriter() {
+      if (!document.body.contains(target)) return;
       if (i < text.length) {
         target.textContent += text.charAt(i);
         i++;
-        setTimeout(typeWriter, 35); // Velocidad ligeramente más rápida por la longitud del texto
+        setTimeout(typeWriter, 35);
       } else {
         target.style.borderRight = "none";
       }

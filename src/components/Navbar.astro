@@ -1,5 +1,7 @@
 ---
 // src/components/Navbar.astro
+import { Image } from "astro:assets";
+import logoNavbar from "../assets/logo/Logo-Andes-ProteccionV2.png";
 ---
 
 <nav
@@ -7,8 +9,8 @@
 >
   <div class="w-full px-6 py-2 flex items-center justify-between">
     <a href="/" class="flex items-center gap-4">
-      <img
-        src="/logo/Logo-Andes-ProteccionV2.png"
+      <Image
+        src={logoNavbar}
         alt="Isotipo de Andes Protección"
         class="h-14 w-auto object-contain"
       />
@@ -35,6 +37,9 @@
       <button
         id="mobile-menu-btn"
         class="text-slate-900 focus:outline-none p-2"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
       >
         <svg
           id="icon-open"
@@ -127,18 +132,25 @@
   }
 </style>
 
-<script is:inline>
-  document.addEventListener("DOMContentLoaded", () => {
+<script>
+  const setupMenu = () => {
     const btn = document.getElementById("mobile-menu-btn");
     const menu = document.getElementById("mobile-menu");
     const iconOpen = document.getElementById("icon-open");
     const iconClose = document.getElementById("icon-close");
     const mobileLinks = document.querySelectorAll(".mobile-link");
 
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
+    if (!btn || !menu) return;
+
+    // Limpiar listeners anteriores si existen por View Transitions
+    const newBtn = btn.cloneNode(true);
+    btn.parentNode.replaceChild(newBtn, btn);
+    
+    newBtn.addEventListener("click", () => {
+      const isHidden = menu.classList.toggle("hidden");
       iconOpen.classList.toggle("hidden");
       iconClose.classList.toggle("hidden");
+      newBtn.setAttribute("aria-expanded", isHidden ? "false" : "true");
     });
 
     mobileLinks.forEach((link) => {
@@ -146,7 +158,10 @@
         menu.classList.add("hidden");
         iconOpen.classList.remove("hidden");
         iconClose.classList.add("hidden");
+        newBtn.setAttribute("aria-expanded", "false");
       });
     });
-  });
+  };
+
+  document.addEventListener("astro:page-load", setupMenu);
 </script>
